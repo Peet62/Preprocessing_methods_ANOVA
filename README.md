@@ -1,5 +1,11 @@
 # Preprocessing_methods_ANOVA
-inspecting influence of various image preprocessing methods on Yolov8 soldering splashes detection
+... Inspecting influence of various image preprocessing methods on Yolov8 soldering splashes detection
+
+The statistics.xlsx excel file contains results from 90 computer simulations of 3 YOLOv8 models: small, medium, large
+
+and 3 different image preprocessing methods tested repeatedly 10 times with various seed in Pytorch. 
+
+More than 2.9e15 FLOPS were performed with help of dual Nvidia RTX 3060 12G. 
 
 Folder CLAHE contains image dataset preprocessed with Contrast limited adaptive histogram equalization
 
@@ -9,7 +15,7 @@ Folder Raw contains original images of specific PCB with no image preprocessing 
 
 Folder MaxGGsc contains RGB color channels manipulation preprocessing method, defined as:
 
-Maximal-green-grayscale (MaxGGsc), where maximum of R, G, B is selected. 
+Maximal-green-grayscale (MaxGGsc), where maximum of R, G, B is selected as R channel replacement. 
 
 In general, the green (G) is the color the human eye is most sensitive to. 
 
